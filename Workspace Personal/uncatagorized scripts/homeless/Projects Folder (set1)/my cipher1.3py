@@ -1,0 +1,30 @@
+text = 'Yo!cjUoaModQfubhgp'
+num = -12
+if num != 12:
+    num = 12
+hidden_message = ''
+answer = 'decifer',text
+No = 'No'
+Yes = 'Yes'
+answerset = ['No','Yes']
+print('Can you decifer my code?:',text)
+print('choices', answerset)
+if input(No):
+    print('try again:',input('Answer here:',))
+elif print('Congradulations! youve solved my first cypher:'):
+    print('the answer is', '')
+
+def A_space_oddessy():
+    alphabet = 'abcdefghijklmnopqrstuvwxyz !'
+    hidden_message = ''
+    for base in text.lower():
+        if base == ' ':
+            hidden_message += base
+        else:
+            subset = alphabet.find(base)
+            subset2 = (subset + num)% len(alphabet)
+            hidden_message += alphabet[subset2]
+    print('decifer my code', text)
+    print('hidden_message:', hidden_message)
+A_space_oddessy()
+    
